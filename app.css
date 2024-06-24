@@ -235,15 +235,24 @@ li {
     padding-bottom: 5rem;
 }
 
-.employmentsummary,
+.employmentsummaryPetSmart,
+.employmentsummaryDogtopia,
+.employmentsummaryUltiMutts,
 .employmentsummarySeasoned {
     grid-column: 2 / 4;
     min-height: 26rem;
     padding-right: 2rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
-.employmentsummary>ul>li,
+.employmentsummaryPetSmart>ul>li,
+.employmentsummaryUltiMutts>ul>li,
+.employmentsummaryDogtopia>ul>li {
+    padding-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+
 .employmentsummarySeasoned>ul>li {
     padding-bottom: 1.5rem;
 }
@@ -253,7 +262,9 @@ li {
         Helvetica,
         sans-serif; */
 
-.employmentsummary>ul>li::before,
+.employmentsummaryPetSmart>ul>li::before,
+.employmentsummaryDogtopia>ul>li::before,
+.employmentsummaryUltiMutts>ul>li::before,
 .employmentsummarySeasoned>ul>li::before {
     content: "▻ ";
     font-size: 1.2rem;
