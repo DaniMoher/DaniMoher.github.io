@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    background-color: #05150B;
+    color: white;
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+button,
+.logos,
+.footerlogos,
+.navlinks {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 1rem 2.75rem;
+    font-size: 1.75rem;
+    align-items: center;
+    box-shadow: #05150B 0px 4px 12px;
+    font-weight: normal;
+}
+
+#home {
+    display: flex;
+    flex: 4;
+    font-weight: normal;
+}
+
+.navlinks {
+    display: flex;
+    flex: 3;
+    font-size: 1.5rem;
+    padding: 0rem 4rem 0rem;
+    font-weight: normal;
+}
+
+#portrait {
+    display: flex;
+    flex: 1;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 6rem 8rem;
+}
+
+.maintext {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-content: end;
+    font-weight: normal;
+    font-size: 5rem;
+}
+
+#name {
+    font-weight: bold;
+}
+
+.subtext {
+    grid-column: 1/3;
+    grid-row: 2;
+    align-content: top;
+    font-size: 3rem;
+    padding: 1rem 0rem;
+}
+
+.portrait {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    justify-self: start;
+    padding-left: 2.75rem;
+}
+
+.eye {
+    background-color: #576C5C;
+    padding: 2rem;
+    border-radius: 25% 10%;
+    max-width: 275px;
+}
+
+
+
+.summary {
+    grid-column: 2/4;
+    grid-row: 1;
+    align-content: end;
+    padding: 2rem;
+    font-size: 2.5rem;
+    border-radius: 1.5rem .5rem;
+    background-color: #576C5C;
+}
+
+.aboutme {
+    background-color: #576C5C;
+}
+
+.aboutmecontent {
+    grid-column: 2/4;
+    grid-row: 2;
+    align-content: top;
+    font-size: 1.5rem;
+    background-color: #576C5C;
+    font-weight: 200;
+}
+
+.callout {
+    background-color: #576C5C;
+    color: #05150B;
+    font-weight: 500;
+}
+
+.socialMedia {
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 20rem;
+    margin: 0rem 3rem 0rem 3rem;
+    position: fixed;
+    top: 26rem;
+    max-width: 30px;
+}
+
+.logos {
+    max-width: 50px;
+    padding-top: 1.5rem;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+
+#roledisplay {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    margin: 10rem 8rem;
+    padding: 1rem;
+    border-radius: .5rem 1.5rem;
+}
+
+#title {
+    grid-row: 1;
+    grid-column: 1;
+    align-content: end;
+    font-size: 2.5rem;
+    padding: 1rem 0rem 1rem 2rem;
+}
+
+.rolewrapper {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: stretch;
+    padding: 0.5rem;
+    border-bottom: 1px solid #576C5C;
+}
+
+.toggle-btn {
+    padding: .5rem 4rem;
+    margin: 0 1rem 1rem 5.25rem;
+    border: 0;
+    font-size: 2rem;
+}
+
+.toggle-btn:hover {
+    box-shadow: #576C5C 0px 0px 0px 1px;
+    background-color: #576C5C22;
+    color: #51ff7f;
+    border-radius: 2rem;
+}
+
+
+.contentwrapper {
+    padding-top: 1rem;
+}
+
+#roledisplay:hover {
+    box-shadow: #576C5C 0px 0px 0px 1px;
+}
+
+.roledetails {
+    grid-column: 1;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.resume {
+    border: 0;
+    position: absolute;
+    top: 67.1rem;
+    left: 28rem;
+    padding: .75rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #576C5C22;
+    color: #51ff7f;
+}
+
+.resume:hover {
+    box-shadow: #576C5C 0px 0px 0px 1px;
+}
+
+
+.roledetails>h2,
+.roledetails>h3,
+.multijob>h3 {
+    font-size: 1.2rem;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.multijob>h4,
+.roledetails>h4 {
+    font-size: 1.2rem;
+    padding: 0rem 0rem 1rem 1rem;
+}
+
+#seasonedfirstrole>h4 {
+    padding-bottom: 5rem;
+}
+
+.employmentsummary,
+.employmentsummarySeasoned {
+    grid-column: 2 / 4;
+    min-height: 26rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.employmentsummary>ul>li,
+.employmentsummarySeasoned>ul>li {
+    padding-bottom: 1.5rem;
+}
+
+/* font-family: 'Sintony',
+        Arial,
+        Helvetica,
+        sans-serif; */
+
+.employmentsummary>ul>li::before,
+.employmentsummarySeasoned>ul>li::before {
+    content: "▻ ";
+    font-size: 1.2rem;
+    position: relative;
+    left: -1rem;
+    color: #576C5C;
+}
+
+.employmentsummarySeasoned {
+    display: none;
+}
+
+.employmentsummarySeasoned.active {
+    display: block;
+}
+
+.multijob {
+    border: 0;
+    text-align: left;
+    padding: 0em 0em 3em 0em;
+    min-width: 20em;
+}
+
+.multijob.active>h3,
+.multijob.active>h4 {
+    background-color: #576C5C22;
+    color: #51ff7f;
+    min-width: 19.3em;
+}
+
+.roledetails>.employer {
+    font-size: 2rem;
+}
+
+.getintouch,
+.projects {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.getintouch>h2,
+.projects>h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.footerlogos {
+    max-width: 30px;
+    align-content: center;
+    justify-content: center;
+    margin: 0rem 2rem 2rem 2rem
+}
+
+#email {
+    border: 0;
+    padding: .75rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: #576C5C22;
+    color: #51ff7f;
+}
+
+#email:hover {
+    box-shadow: #51ff7f 0px 0px 5px 1px;
+    background-color: #576C5C33;
+}
+
+iframe {
+    width: 87%;
+    max-height: 50rem;
+    min-height: 30rem;
+    text-align: center;
+    margin-left: 8rem;
+}
+
+.projectswrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2rem 8rem;
+}
+
+.tipCalculator {
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+.tipCalculatorDescription {
+    position: relative;
+    left: -10rem;
+    grid-row: 1;
+    grid-column: 5;
+    padding: 2rem 0rem;
+    text-align: left;
+}
+
+.externalCode {
+    position: relative;
+    left: 5px;
+    bottom: 3px;
+    font-weight: 900;
+    font-size: smaller;
+    text-decoration: none;
+}
+
+.externalCode:hover {
+    color: #51ff7f;
+    position: relative;
+    left: 7px;
+    bottom: 5px;
+}
+
+.projectTitle,
+.projectExplanation {
+    font-size: 1.75rem;
+    color: #51ff7f;
+}
+
+p {
+    font-size: 1.1rem;
+}
