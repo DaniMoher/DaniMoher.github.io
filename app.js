@@ -133,3 +133,10 @@ function scrollToSection(sectionId) {
         });
     }
 }
+//button redirect to file
+const button = document.querySelectorAll('.resume');
+button.forEach(button => {
+    button.onclick = function () {
+        window.location.href = 'images/Maegen (Dani) Moher Resume.pdf';
+    };
+});
