@@ -18,15 +18,15 @@
         <h3 id="home">Dani Moher</h3>
         <nav id="navbar">
             <ul class="navlinks">
-                <li class="navlinks">Background</li>
-                <li class="navlinks">Projects</li>
-                <li class="navlinks">Contact</li>
+                <li class="navlinks" onclick="scrollToSection('roledisplay')">Background</li>
+                <li class="navlinks" onclick="scrollToSection('projects')">Projects</li>
+                <li class="navlinks" onclick="scrollToSection('footer')">Contact</li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="intro">
             <div class="wrapper">
                 <h1 class="maintext">Hi, my name is <span id="name">Dani!</span></h1>
                 <h2 class="subtext">Aspiring Junior Front-End Developer</h2>
@@ -209,7 +209,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects">
             <h2>Projects</h2>
             <div class="projectswrapper">
 
@@ -224,7 +224,8 @@
                 </div>
                 <div class="tipCalculatorDescription">
                     <h3 class="projectTitle">Tip Calculator</h3>
-                    <p>View full CodePen<a class="externalCode" href="">↗</a></p>
+                    <p>View full CodePen<a class="externalCode" href="https://codepen.io/DaniMoher/pen/MWdVRrM">↗</a>
+                    </p>
                     <br>
                     <h3 class="projectExplanation">Explanation</h3>
                     <p>The tip calculator calculates the individual cost for each member of a group, based upon their
@@ -237,20 +238,26 @@
         </section>
         <aside>
             <div class="socialMedia">
-                <img class="logos" src="images/logos/linkedin.png">
-                <img class="logos" src="images/logos/github.png">
-                <img class="logos" src="/images/logos/codepen.png">
+                <button class="logobutton" onclick="redirectToLinkedIn()"><img class="logos"
+                        src="images/logos/linkedin.png"></button>
+                <button class="logobutton" onclick="redirectToGithub()"><img class="logos"
+                        src="images/logos/github.png"></button>
+                <button class="logobutton" onclick="redirectToCodepen()"><img class="logos"
+                        src="/images/logos/codepen.png"></button>
             </div>
         </aside>
     </main>
-    <footer class="footer">
+    <footer id="footer">
         <div class="getintouch">
             <h2>Get in touch</h2>
             <button id="email" onclick="sendEmail()">Email me!</button>
             <div class="getintouch">
-                <img class="footerlogos" src="/images/logos/linkedin.png">
-                <img class="footerlogos" src="/images/logos/github.png">
-                <img class="footerlogos" src="/images/logos/codepen.png">
+                <button class="logobutton" onclick="redirectToLinkedIn()"><img class="footerlogos"
+                        src="/images/logos/linkedin.png"></button>
+                <button class="logobutton" onclick="redirectToGithub()"><img class="footerlogos"
+                        src="/images/logos/github.png"></button>
+                <button class="logobutton" onclick="redirectToCodepen()"><img class="footerlogos"
+                        src="/images/logos/codepen.png"></button>
             </div>
         </div>
     </footer>

@@ -126,14 +126,14 @@ li {
     display: inline-flex;
     flex-direction: column;
     padding-top: 20rem;
-    margin: 0rem 3rem 0rem 3rem;
+    margin: 0rem 1rem 0rem 1rem;
     position: fixed;
     top: 26rem;
     max-width: 30px;
 }
 
 .logos {
-    max-width: 50px;
+    max-width: 30px;
     padding-top: 1.5rem;
 }
 
@@ -289,13 +289,13 @@ li {
 }
 
 .getintouch,
-.projects {
+#projects {
     text-align: center;
     padding-top: 2rem;
 }
 
 .getintouch>h2,
-.projects>h2 {
+#projects>h2 {
     font-size: 3rem;
     padding-bottom: 1rem;
 }
@@ -304,7 +304,7 @@ li {
     max-width: 30px;
     align-content: center;
     justify-content: center;
-    margin: 0rem 2rem 2rem 2rem
+    margin: 0rem 2rem 2rem 0rem
 }
 
 #email {
@@ -375,4 +375,12 @@ iframe {
 
 p {
     font-size: 1.1rem;
+}
+
+.logobutton {
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    padding: 0rem 2.5rem;
+    margin-right: 2rem;
 }

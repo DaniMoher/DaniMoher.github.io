@@ -76,33 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-//toggle Seasoned jobs
-// document.addEventListener('DOMContentLoaded', function () {
-//     const jobButtons = document.querySelectorAll('.multijob');
-//     const employmentSummaries = document.querySelectorAll('.employmentsummarySeasoned');
-
-//     // Show the default employment summary (first one) initially
-//     employmentSummaries[0].classList.add('active');
-
-//     // Add click event listeners to each job button
-//     jobButtons.forEach(function (button, index) {
-//         button.addEventListener('click', function () {
-//             // Hide all employment summaries
-//             employmentSummaries.forEach(function (summary) {
-//                 summary.classList.remove('active');
-//             });
-
-//             // Show the clicked employment summary
-//             employmentSummaries[index].classList.add('active');
-
-//             // Update active state for buttons
-//             jobButtons.forEach(function (btn) {
-//                 btn.classList.remove('active');
-//             });
-//             button.classList.add('active');
-//         });
-//     });
-// });
 
 document.addEventListener('DOMContentLoaded', function () {
     const jobButtons = document.querySelectorAll('.multijob');
@@ -135,4 +108,28 @@ document.addEventListener('DOMContentLoaded', function () {
 function sendEmail() {
     const recipientEmail = 'maegen.k.moher@gmail.com';
     window.location.href = 'mailto:' + recipientEmail;
+}
+
+//redirect to linkedin
+function redirectToLinkedIn() {
+    window.location.href = 'https://www.linkedin.com/in/danimoher';
+}
+//redirect to github
+function redirectToGithub() {
+    window.location.href = 'https://github.com/danimoher';
+}
+//redirect to codepen
+function redirectToCodepen() {
+    window.location.href = 'https://codepen.io/danimoher';
+}
+//scroll to specific section of page
+function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        var offset = section.offsetTop - 120;
+        window.scrollTo({
+            top: offset,
+            behavior: 'smooth'
+        });
+    }
 }
