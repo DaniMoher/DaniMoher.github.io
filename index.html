@@ -17,7 +17,8 @@
     <header id="header">
         <h3 id="home">Dani Moher</h3>
         <nav id="navbar">
-            <ul class="navlinks">
+            <button id="menuButton" onclick="toggleDropdown()">Menu</button>
+            <ul class="navlinks" id="navbarLinks">
                 <li class="navlinks" onclick="scrollToSection('roledisplay')">Background</li>
                 <li class="navlinks" onclick="scrollToSection('projects')">Projects</li>
                 <li class="navlinks" onclick="scrollToSection('footer')">Contact</li>
@@ -29,7 +30,7 @@
         <section id="intro">
             <div class="wrapper">
                 <h1 class="maintext">Hi, my name is <span id="name">Dani!</span></h1>
-                <h2 class="subtext">Aspiring Junior Front-End Developer</h2>
+                <h2 class="subtext">Aspiring Junior Developer</h2>
                 <div class="portrait">
                     <div class="eye-container">
                         <img id="downLeft" class="eye" src="images/pixelPortraitDownLeft.png">
@@ -56,7 +57,8 @@
         </article>
 
         <section id="roledisplay">
-            <h2 id="title">Background</h2>
+            <h2 id="title">Background <button class="resume">View Resume</button>
+            </h2>
             <div class="rolewrapper">
                 <button class="toggle-btn" data-target="content1">PetSmart</button>
                 <button class="toggle-btn" data-target="content2">Dogtopia</button>
@@ -69,7 +71,6 @@
                         <h2 class="employer">PetSmart</h2>
                         <h3 class="jobdetails">Senior Manager, Client Services</h3>
                         <h4 class="jobdetails">2017-2019</h4>
-                        <button class="resume">View Full Resume</button>
                     </div>
                     <div class="employmentsummaryPetSmart">
                         <ul>
@@ -95,7 +96,6 @@
                         <h2 class="employer">Dogtopia</h2>
                         <h3 class="jobdetails">Operations Manager, Customer Experience</h3>
                         <h4 class="jobdetails">2019-2020</h4>
-                        <button class="resume">View Full Resume</button>
                     </div>
                     <div class="employmentsummaryDogtopia">
                         <ul>
@@ -122,7 +122,6 @@
                         <h2 class="employer">UltiMutts</h2>
                         <h3 class="jobdetails">Team Lead, Customer Experience Strategy & Insights</h3>
                         <h4 class="jobdetails">2020-2021</h4>
-                        <button class="resume">View Full Resume</button>
                     </div>
                     <div class="employmentsummaryUltiMutts">
                         <ul>
@@ -163,7 +162,6 @@
                             <h3 class="jobdetails">Product Operations Specialist</h3>
                             <h4 class="jobdetails">2024-2024</h4>
                         </button>
-                        <button class="resume">View Full Resume</button>
                     </div>
                     <div class="employmentsummarySeasoned active">
                         <ul>
@@ -221,6 +219,7 @@
                             Tip Calculator</a> by DaniMoher (<a href="https://codepen.io/DaniMoher">@DaniMoher</a>)
                         on <a href="https://codepen.io">CodePen</a>.
                     </iframe>
+                    <img class="projectCapture" src="/images/tipCalc.png">
                 </div>
                 <div class="tipCalculatorDescription">
                     <h3 class="projectTitle">Tip Calculator</h3>

@@ -140,3 +140,22 @@ button.forEach(button => {
         window.location.href = 'images/Maegen (Dani) Moher Resume.pdf';
     };
 });
+
+// Function to toggle dropdown visibility
+function toggleDropdown() {
+    var dropdown = document.getElementById("navbarLinks");
+    var menuButton = document.getElementById("menuButton");
+    dropdown.classList.toggle("active");
+    menuButton.classList.toggle("active");
+}
+
+// Close dropdown if user clicks outside of it
+document.addEventListener("click", function (event) {
+    var dropdown = document.getElementById("navbarLinks");
+    var menuButton = document.getElementById("menuButton");
+    if (!dropdown.contains(event.target) && event.target !== menuButton) {
+        dropdown.classList.remove("active");
+        menuButton.classList.remove("active");
+    }
+});
+
