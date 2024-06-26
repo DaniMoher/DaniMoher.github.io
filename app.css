@@ -126,7 +126,7 @@ li {
 .socialMedia {
     display: inline-flex;
     flex-direction: column;
-    padding-top: 20rem;
+    padding-top: 4em;
     margin: 0rem 1rem 0rem 1rem;
     position: fixed;
     top: 26rem;
@@ -573,10 +573,6 @@ p {
     .projectswrapper {
         margin-bottom: 0;
 
-    }
-
-    .socialMedia {
-        display: none;
     }
 
     .tipCalculator,
